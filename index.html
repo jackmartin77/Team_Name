@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Beasiswa Pendidikan </title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.googleapis.com/css?family=Economica:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					onMixEnd: filterList.hoverEffect()
+				});				
+			},
+			
+			hoverEffect: function () {
+			
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			}
+		};
+		
+		filterList.init();		
+	});	
+	</script>
+
+</head>
+<body>
+		<div class="header">
+			<div class="container">
+				<div class="logo">
+				  <a href="index.html"><img src="images/nyoba.png" alt=""></a>
+				</div>
+		  		<div class="menu">
+					<a class="toggleMenu" href="#"><img src="images/nav_icon.png" alt="" /> </a>
+					<ul class="nav">
+					  <li><a href="#home" class="scroll"> Home </a></li>
+					  <li><a href="#beasiswa" class="scroll"> Beasiswa </a></li>
+					  <li><a href="#stories" class="scroll"> Stories </a></li>
+					  <li><a href="#about" class="scroll"> About </a></li>
+					  <li><a href="#contact" class="scroll"> Contact </a></li>
+					  <li><script>
+  (function() {
+    var cx = '011012921419598149170:3o8qo8ytq-q';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search></li>								
+					 </ul>
+					<script type="text/javascript" src="js/responsive-nav.js"></script>
+					<script type="text/javascript" src="js/move-top.js"></script>
+					<script type="text/javascript" src="js/easing.js"></script>
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+				</div>							
+	  			<div class="clearfix"> </div>
+			  </div>
+		</div>
+			<div class="banner text-center" id="home">
+				<div class="container">
+					<div class="banner-info">
+						<h1> Selamat Datang Pejuang Beasiswa </h1>
+						<p> Orang-orang besar tumbuh bersama keputusan-keputusan besar yang diambilnya.<br>Bukan oleh kemudahan-kemudahan hidup yang didapatnya.</p>
+					 </div>
+				</div>
+		    </div>
+		    <div class="main">
+		    	<div class="content_bottom" id="beasiswa">
+		    	  <div class="container"> 
+			       <div class="portfolio_top">
+					 <h3 class="m_5"> Beasiswa  </h3>
+					 <ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web"> Semua Jenis Beasiswa </span></li>
+						<li><span class="filter" data-filter="app"> Nasional </span></li>
+						<li><span class="filter" data-filter="card"> Internasional </span></li>
+					 </ul>
+				     <div class="clear"></div>
+			       </div>
+				   <div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+						  <a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						     <img src="images/ui.png" class="img-responsive" alt=""/>
+						  </a>
+						</div>
+						<a href="single.html"><div class="links">
+						  <h4> University of Indonesia </h4><div class="clearfix"></div>
+		  			    </div></a>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						       <img src="images/ugm.jpg" class="img-responsive" alt=""/>
+						    </a>
+		                </div>
+		                <a href="single.html"><div class="links">
+						   <h4> Gajah Mada University </h4><div class="clearfix"></div>
+		  			    </div></a>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						       <img src="images/harvard.png" class="img-responsive" alt=""/>
+						    </a>
+		                </div>
+		                <a href="single.html"><div class="links">
+						   <h4> Harvard University </h4><div class="clearfix"></div>
+		  			    </div></a>
+					</div>				
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						       <img src="images/mit.jpg" class="img-responsive" alt=""/>
+						    </a>
+		                </div>
+		                <a href="single.html"><div class="links">
+						   <h4> Massachusetts Institute of Technology </h4><div class="clearfix"></div>
+		  			    </div></a>
+					</div>	
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						       <img src="images/tokyo.jpg" class="img-responsive" alt=""/>
+						    </a>
+		                </div>
+		                <a href="single.html"><div class="links">
+						   <h4> University of Tokyo </h4><div class="clearfix"></div>
+		  			    </div></a>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox">
+						       <img src="images/PNJ.png" class="img-responsive" alt=""/>
+						    </a>
+		                </div>
+		                <a href="single.html"><div class="links">
+						   <h4> Politeknik Negeri Jakarta </h4><div class="clearfix"></div>
+		  			    </div></a>
+					</div>	
+				</div>
+		       </div>
+		      </div>
+		    	<div class="content_middle" id="stories">
+		    		<div class='container'>
+		    			<h2 class="head"> Stories </h2>
+		    			<p class="service_desc"> Tidak ada hal yang mudah dalam hidup ini, bahkan makanan cepat saji sekalipun butuh dimasak. Mereka adalah pejuang Beasiswa, lihat bagaimana mereka berjuang </p>
+		    			
+		    			<div class="row service_top">
+		    				<div class="col-md-4 service_grid">
+		    					<i class="icon1"></i>
+		    					<h3><a href="stories.html"> Guntur Januar Fitriano </a></h3>
+		    					<p> Saya selalu berusaha belajar dan berjuang karna sulitnya menghadapi kehidupan. Dan perjuangan tidak sia - sia - Politeknik Negeri Jakarta </p>
+		    				</div>
+		    				<div class="col-md-4 service_grid">
+		    					<i class="icon2"></i>
+		    					<h3><a href="stories.html"> Indah Resiana </a></h3>
+		    					<p> Saya belajar siang malam untuk mendapat kesempatan dan tidak sia - sia - University Indonesia </p>
+		    				</div>
+		    				<div class="col-md-4 service_grid">
+		    					<i class="icon3"></i>
+		    					<h3><a href="stories.html"> Karmin Sukijan </a></h3>
+		    					<p> Saya dulu sulit untuk belajar, tapi setelah liat web beasiswa ini saya makin males belajar ehhhh dapet malah - Harvard University </p>
+		    				</div>
+		    			</div>
+		    			<div class="row">
+		    				<div class="col-md-4 service_grid">
+		    					<i class="icon4"></i>
+		    					<h3><a href="stories.html"> Leonardo De Sava </a></h3>
+		    					<p> Saya sangat suka belajar bahkan saya belajar sampe sakit dan seperti ini. Saya berhasil berkat usaha saya - University of Tokyo </p>
+		    				</div>
+		    				<div class="col-md-4 service_grid">
+		    					<i class="icon5"></i>
+		    					<h3><a href="stories.html"> Yuma Hariano Marpaung </a></h3>
+		    					<p> Saya selalu dipaksa belajar oleh orang tua saya dan saya berhasil - Massachusetts Institute of Technology </p>
+		    				</div>
+		    				<div class="col-md-4 service_grid">
+		    					<i class="icon6"></i>
+		    					<h3><a href="stories.html"> Giantara Diandra Eastland </a></h3>
+		    					<p> Saya belajar dirumah sekolah dan dimana saja dan saya berhasil - Gajah Mada University </p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="content_top" id="about">
+		    		<div class='container'>
+		    			<h2 class="head"> About </h2>
+		    			<p class="m_1"> Kami membantu anda para pejuang Beasiswa. Pendidikan adalah sejarah terbaik di hidupmu.  </p>
+		    			<div class="row top_box">
+		    				<div class="col-md-4 contentleft_grid">
+		    					<i class="creator1"></i>
+		    					<h3 class="m_2"></i> Hizkia Robinsar Marpaung </h3>
+		    					<p class="m_3"> Mahasiswa Politeknik Negeri Jakarta, Semester 3. Anda bisa memanggil saya Hizkia, saya adalah orang Batak, saya beragama Kristen, dan sangat menyukai teknologi dan perkembangan </p>
+		    					<a href="https://www.gmail.com" class="content_btn">hizkiarobinsar@gmail.com</a>
+		    				</div>
+		    				<div class="col-md-4">
+		    					<i class="creator2"></i>
+		    					<h3 class="m_2"></i> Jack Martin Reinaldo </h3>
+		    					<p class="m_3"> Mahasiswa Politeknik Negeri Jakarta, Semester 3. Anda bisa memanggil saya Jack, saya adalah orang Tionghoa, saya beragama Kristen, dan sangat menyukai teknologi dan kemudahan </p>
+		    					<a href="https://www.gmail.com" class="content_btn">jackreinaldo08@gmail.com</a>
+		    				</div>
+		    				<div class="col-md-4">
+		    					<i class="creator3"></i>
+		    					<h3 class="m_2"></i> Robby Kurnia Aprilian </h3>
+		    					<p class="m_3"> Mahasiswa Politeknik Negeri Jakarta, Semester 3. Anda bisa memanggil saya Robby, saya adalah orang Padang, saya beragama Islam, dan sangat menyukai teknologi dan militer </p>
+		    					<a href="https://www.gmail.com" class="content_btn">lostrobby14@gmail.com</a>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		      <div class="contact" id="contact">
+		      	<div class="container">
+		      		<div class="row">
+		      			<div class="col-md-9">
+		      			  <div class="contact-form">
+				  	        <form method="post" action="contact-post.html">
+					    	    <p class="comment-form-author"><label for="author"> Your Name: </label>
+					    	    	<input type="text" class="textbox" value="Enter your name here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name here...';}">
+						    	</p>
+						        <p class="comment-form-author"><label for="author"> Email: </label>
+						     	   <input type="text" class="textbox" value="Enter your email here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+						        </p>
+						        <p class="comment-form-author"><label for="author"> Message: </label>
+						    	  <textarea value="Enter your message here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Enter your message here...</textarea>
+						        </p>
+						        <input name="submit" type="submit" id="submit" value="Submit">
+					        </form>
+				          </div>
+				        </div>
+		      			<div class="col-md-3 contact_right">
+		      				<h4> Address </h4>
+		      				<p class="contact_address"> Tanyakan pada kami <br> Untuk informasi lebih lanjut hubungi kami </p>
+		      				<p class="contact_address1">Phone : +6812-8321-6151<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+6857-1146-9280<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+6812-8320-2075</p>
+		      			</div>
+		      		</div>
+		      	</div>
+		      </div>
+		    </div>
+		    <div class="footer">
+		    	<div class="container">
+		    		<div class="copy foot-side-left">
+		              <a><img src="images/logo HIMSISFO.png"></a>
+		              <span>Copyrights &copy; by Team Name 2017</span>
+		            </div>
+		            <div class="foot-side-right">
+		              <a href="http://www.facebook.com"><img class="media" src="images/fb.png" width="40px" height="40px"> </a>
+		              <a href="http://www.instagram.com"><img class="media" src="images/ig.png" width="40px" height="40px"> </a>
+		              <a href="http://www.twitter.com"><img class="media" src="images/twitter.png" width="40px" height="40px"> </a>
+		              <a><img src="images/logo WDC.png"></a>
+		            </div>
+		    	</div>
+		    	<script type="text/javascript">
+						$(document).ready(function() {
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+				</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+		    </div>
+</body>
+</html>		
